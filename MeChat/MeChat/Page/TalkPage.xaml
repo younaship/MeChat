@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeChat.Page.TalkPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+            
+            <ScrollView Grid.Row="0" x:Name="ScrollView">
+                <StackLayout x:Name="Stack_Main">
+                    <Label Text="2019" HorizontalOptions="Center" />
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" BackgroundColor="LightBlue">
+                <Editor HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Wheat" Margin="5" x:Name="Editor_Message"/>
+                <Button Text="Send" WidthRequest="80" BackgroundColor="SkyBlue" Margin="5" Clicked="Button_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

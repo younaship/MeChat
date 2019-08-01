@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeChat.Page.ProfilePage">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Aspect="AspectFill" x:Name="Image_Header"/>
+
+
+            <BoxView Grid.Row="1" BackgroundColor="Gainsboro"/>
+
+            <StackLayout BackgroundColor="Gainsboro" Grid.Row="2">
+                <Label Text="NAME" TextColor="Black" HorizontalOptions="Center" x:Name="Label_Name"/>
+                <Label Text="Hello. My Name is Younashi Pafe." TextColor="Gray" HorizontalOptions="Center" x:Name="Label_Summary"/>
+            </StackLayout>
+
+            <Image HorizontalOptions="Center" x:Name="Image_Icon"
+                 HeightRequest="150" WidthRequest="150"
+                 VerticalOptions="End" TranslationY="60" Aspect="AspectFit"
+                 />
+
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

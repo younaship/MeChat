@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeChat.Page.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to MeChat!" TextColor="Orange" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="30"/>
+            <StackLayout Margin="50">
+                <Label Text="UserID" />
+                <Editor Text="" x:Name="Editor_UId" />
+                <Label Text="PassWord" />
+                <Editor Text="" x:Name="Editor_PassWd"/>
+                <Button Text="OK" WidthRequest="200" HeightRequest="60" Clicked="Button_OK_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

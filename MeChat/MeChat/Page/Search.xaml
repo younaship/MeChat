@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeChat.Page.Search">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to MeChat."
+                HorizontalOptions="CenterAndExpand" />
+            
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Gray" />
+            <Label Text="フレンドリクエスト"></Label>
+            <Entry x:Name="Entry_ReqId"/>
+            <Button Text="リクエスト送信" Clicked="Button_Clicked_ReqFriend" Margin="10"/>
+
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="2" Color="Gray" Margin="10"/>
+            <Button Text="LogOut" Clicked="Button_Clicked_LogOut" Margin="20" HeightRequest="60" WidthRequest="200"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
